@@ -3,21 +3,25 @@ body {
 }
 
 section {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* text-align: center; */
 }
 
 .game-grid-container {
 	display: grid;
-	grid-template-columns: 5% 25% 5% 25% 5% 25% 5%;
-	grid-template-rows: 5% 25% 5% 25% 5% 25% 5%;
-	width: 400px;
-	height: 400px;
-	margin: 100px auto;
+	grid-template-columns: 4% 20% 4% 20% 4% 20% 4% 20% 4%;
+	grid-template-rows: 4% 20% 4% 20% 4% 20% 4% 20% 4%;
+	width: 550px;
+	height: 550px;
+	margin: 40px auto;
 }
 
 .dot {
-	width: 10px;
-	height: 10px;
+	width: 15px;
+	height: 15px;
 
 	border-radius: 50px;
 	margin: auto;
@@ -25,7 +29,7 @@ section {
 }
 
 .line-horizontal {
-	height: 5px;
+	height: 10px;
 	background-color: lightgray;
 	width: 100%;
 	cursor: pointer;
@@ -35,7 +39,7 @@ section {
 
 .line-vertical {
 	height: 100%;
-	width: 5px;
+	width: 10px;
 	background-color: lightgray;
 	cursor: pointer;
 	border-radius: 5px;
@@ -54,4 +58,5 @@ section {
 
 .box {
 	width: 100%;
+	border-radius: 10%;
 }

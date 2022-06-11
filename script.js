@@ -1,5 +1,5 @@
-const N = 4;
-const M = 4;
+const N = 5;
+const M = 5;
 
 let turn = "R";
 let selectedLines = [];
@@ -165,13 +165,13 @@ const increasePoint = () => {
 
 const checkEnd = () => {
 	var count = 0;
-	for (var prop in selectedLines) {
-		if (selectedLines.hasOwnProperty(prop)) {
-			count++;
-		}
+	for (var i in selectedLines) {
+		count++;
 	}
-	if (count == 24)
+	if (count == 40) {
 		return true;
+	}
+
 	else
 		return false;
 }
